@@ -1,0 +1,179 @@
+.my-travels-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f5f5f5, white);
+  padding-bottom: 3rem;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+}
+
+.my-travels-container {
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+.section-header h2 {
+  color: #1e3c72;
+  font-size: 1.8rem;
+}
+
+.my-travels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.my-travel-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-travel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(30, 60, 114, 0.2);
+}
+
+.my-travel-card .travel-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.my-travel-card .travel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.my-travel-card:hover .travel-image img {
+  transform: scale(1.1);
+}
+
+.travel-info {
+  padding: 1.5rem;
+}
+
+.travel-info h3 {
+  color: #1e3c72;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.travel-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.travel-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.no-travels {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.no-travels p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2a5298 0%, #3b82f6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #2a5298;
+  border: 2px solid #2a5298;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.btn-outline:hover {
+  background: #e3f2fd;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .my-travels-grid {
+    grid-template-columns: 1fr;
+  }
+}

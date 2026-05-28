@@ -1,0 +1,13 @@
+.vs/
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+**/build/
+**/packages/
+*.user
+*.suo
+*.log
+.env
+.env.*
+**/UploadedFiles/
